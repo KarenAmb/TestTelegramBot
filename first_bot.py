@@ -8,7 +8,7 @@ logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',
                     filename='bot.log'
                     )
 
-
+#Главная функция с заданием ключа, обработчиков комманд.
 def main():
     updater = Updater(settings.TELEGRAM_API_KEY)  #ключ теперь в отдельном файле
     dp = updater.dispatcher
