@@ -17,7 +17,7 @@ def main():
     updater.start_polling()
     updater.idle()
 
-#функция обработки комманды /start
+#функция обработки комманды /start!
 def user_welcomming(bot, update):
     my_text = "Здарова {}! Я только начал жить, не суди строго =)".format(update.message.chat.first_name)
     print(my_text)
