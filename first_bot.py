@@ -34,7 +34,7 @@ def talking_with_user(bot, update):
     update.message.reply_text(user_text+'. Окей, и что?')
 
 #функция для обработки ошибок
-def error(bot, update):
+def error(bot, update, error):
     logging.warning('Update "%s" caused error "%s"', update, error)
 
 if __name__ == "__main__":
