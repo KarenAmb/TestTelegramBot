@@ -35,7 +35,9 @@ def talking_with_user(bot, update):
 
 #функция для обработки ошибок
 def error(bot, update, error):
-    logging.warning('Update "%s" caused error "%s"', update, error)
+    #тут он пишет в чем суть ошибки
+    #logging.warning('Update "%s" caused error "%s"', update, error)
+    pass #пропускаем все ошибки
 
 if __name__ == "__main__":
     logging.info('Bot has been started') #Сообщение о старте успешном бота в логе
