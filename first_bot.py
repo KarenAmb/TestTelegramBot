@@ -30,7 +30,7 @@ def user_welcomming(bot, update):
 #Функция общения с пользователем
 def talking_with_user(bot, update):
     user_text = update.message.text
-    logging.info(user_text) #Логируем все что пишет юзер
+    logging.info('Пользователь {} ввел: {} '.format(update.message.chat.username,user_text)) #Логируем все что пишет юзер
     update.message.reply_text(user_text+'. Окей, и что?')
 
 #функция для обработки ошибок
