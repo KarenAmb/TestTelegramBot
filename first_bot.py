@@ -20,7 +20,7 @@ def main():
 #функция обработки комманды /start!
 def user_welcomming(bot, update):
     my_text = "Здарова {}! Я только начал жить, не суди строго =)".format(update.message.chat.first_name)
-    print(my_text)
+    logging.info('Пользоавтель {} нажал /start'.format(update.message.chat.username))
     update.message.reply_text(my_text)
 
 #Функция общения с пользователем
